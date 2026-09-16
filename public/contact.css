@@ -1,0 +1,334 @@
+body{
+    height:100vh;
+    font-family: "Roboto", sans-serif;
+    background-color: #252525;
+    color:white;
+  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    padding:1em;
+}
+
+label{
+    margin-bottom: 0.5em;
+}
+
+input{
+    margin-bottom: 1em;
+}
+
+textarea{
+    margin-bottom: 2em;
+    height: 200px;
+    resize: none;
+}
+
+.btn{
+    padding:0.75em;
+    background-color:#70e000;
+    border:none;
+    border-radius: 3px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+header{
+    padding: 1em 1em 0;
+    text-align: center;
+    margin-top:0.75em;
+}
+
+header p{
+    text-align: justify;
+    line-height: 1.5em;
+    margin-top:0;
+}
+
+header h1{
+    font-weight: 500;
+    margin-bottom: 1.5em;
+}
+
+.side-menu{
+    background-color: #252525;
+    width:50%;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    padding-top:5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#a-tags{
+    width:100%;
+}
+
+a{
+    color:white;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    width:100%;
+    padding:1em 0;
+    text-decoration: none;
+    cursor:pointer;
+    transition: background-color 0.25s ease;
+    text-align: center;
+}
+
+a:hover{
+    color:#70e000;
+    background-color: #1c1c1c;
+}
+
+.fa-bars{
+    color: white;
+    position:absolute;
+    top:1.5em;
+    left:1em;
+}
+
+.fa-bars:hover{
+    color:#70e000;
+    cursor: pointer;
+}
+
+.slide{
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.close-btn{
+    background-color: transparent;
+    color:grey;
+    border:none;
+    position:absolute;
+    top:1em;
+    right:1em;
+    cursor:pointer;
+}
+
+.close-btn:hover{
+    color:#70e000;
+}
+
+
+
+@media(min-width:420px){
+    input{
+        height: 2em;
+    }
+
+    .fa-bars{
+        font-size: 1.2rem;
+    }
+
+    .close-btn{
+        font-size: 1rem;
+    }
+}
+
+@media(min-width:550px){
+    body{
+        padding:1em;
+    }
+
+    .btn{
+        width:80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    textarea{
+        margin-bottom: 4em;
+    }
+
+    header p{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media(min-width:720px){
+
+    body{
+        padding:1.5em;
+    }
+
+   input{
+        margin-bottom: 1.5em;
+        font-size: 1.1rem;
+   }
+
+   label{
+    font-size: 1.1rem;
+   }
+
+   header p{
+        margin-bottom: 0;
+        font-size: 1.5rem;
+   }
+
+   header{
+        margin-bottom: 1em;
+   }
+
+   header h1{
+        font-size: 2.5rem;
+   }
+
+   .btn{
+        width:70%;
+        font-size: 1rem;
+        font-weight: 700;
+   }
+
+    .close-btn{
+        font-size: 1.2rem;
+    }
+
+    a{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media(min-width:850px){
+    header p{
+        font-size: 1.75rem;
+    }
+
+    label, input, textarea{
+        font-size: 1.2rem;
+    }
+
+    .btn{
+        font-size: 1rem;
+        padding:1.2em;
+        font-weight: 700;
+        border-radius: 6px;
+    }
+
+    header h1{
+        font-size: 2.75rem;
+    }
+
+}
+
+@media(min-width:1080px){
+    body{
+        padding:2em;
+    }
+
+    header h1{
+        font-size: 3rem;
+    }
+
+    header p, label{
+        font-size: 2rem;
+    }
+
+    .btn{
+        font-weight: 700;
+        font-size: 1.3rem;
+        width:60%;
+        border-radius: 5px;
+        padding:1em;
+    }
+
+    input{
+        font-size: 1rem;
+    }
+
+    textarea{
+        font-size: 1rem;
+    }
+
+    .fa-bars{
+        font-size: 1.5rem;
+   }
+
+   a{
+        font-size: 1.5rem;
+   }
+
+   .close-btn{
+        font-size: 1.5rem;
+   }
+}
+
+@media(min-width:1500px){
+    header h1{
+        font-size: 4.75rem;
+        margin: 0.75em 0 0;
+    }
+
+    header p{
+        font-size: 2.2rem;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .container{
+        padding:0 7em;
+        margin-top:5em;
+    }
+
+    input,label, textarea{
+        font-size: 2rem;
+    }
+
+    textarea{
+        height:500px;
+    }
+
+    input{
+        margin-bottom: 1.53em;
+    }
+
+    .btn{
+        width:40%;
+        font-size: 2rem;
+        padding:1.1em;
+        
+    }
+
+    a{
+        font-size: 2.5rem;
+   }
+
+   .side-menu{
+        width:20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+   }
+
+   .fa-bars{
+        font-size: 2.5rem;
+   }
+
+   #a-tags{
+        padding:0;
+   }
+
+   .close-btn{
+        font-size: 2.5rem;
+   }
+}

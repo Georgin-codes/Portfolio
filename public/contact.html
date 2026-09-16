@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Let's Get in Touch</h1>
+        <p>Have a question, want to talk about a project, or just want to say hello? Feel free to send me a message using the form below. I’ll get back to you as soon as I can.</p>
+    </header>
+    <section class="container">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Your message"></textarea>
+
+            <button class="btn">Send Message</button>
+
+        </form>
+    </section>
+
+     <i class="fa-solid fa-bars" id="icon"></i>
+
+    <section class="side-menu" id="side-menu">
+        <div class="container" id="a-tags">
+            <a href="./index.html">Home</a>
+            <a href="./contact.html">Contact</a>
+            <a href="">Projects</a>
+        </div>
+        <button class="close-btn" id="close-btn">X</button>
+    </section>
+
+    <script src="./contact.js"></script>
+</body>
+</html>
