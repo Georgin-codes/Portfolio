@@ -41,6 +41,9 @@ textarea{
     border-radius: 3px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    width:85%;
+    display: block;
+    margin:0 auto;
 }
 
 header{
@@ -73,7 +76,6 @@ header h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 
 #a-tags{
@@ -151,8 +153,6 @@ a:hover{
 
     .btn{
         width:80%;
-        display: block;
-        margin: 0 auto;
     }
 
     textarea{
@@ -315,9 +315,6 @@ a:hover{
 
    .side-menu{
         width:20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
    }
 
    .fa-bars{
@@ -326,6 +323,9 @@ a:hover{
 
    #a-tags{
         padding:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
    }
 
    .close-btn{
