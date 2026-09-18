@@ -3,7 +3,6 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: #252525;
     color:white;
-  
 }
 
 form{
@@ -13,7 +12,7 @@ form{
 
 
 .container{
-    height:100vh;
+    /* height:100vh; */
     display:flex;
     flex-direction: column;
     justify-content: start;
@@ -210,6 +209,8 @@ a:hover{
 }
 
 @media(min-width:850px){
+
+
     header p{
         font-size: 1.75rem;
     }
@@ -223,6 +224,7 @@ a:hover{
         padding:1.2em;
         font-weight: 700;
         border-radius: 6px;
+        margin-bottom: 2em;
     }
 
     header h1{
@@ -250,6 +252,7 @@ a:hover{
         width:60%;
         border-radius: 5px;
         padding:1em;
+        margin-bottom: 3em;
     }
 
     input{
