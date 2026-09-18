@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio showcasing my software development projects, skills and experience.",
+  "homepage": "https://github.com/Georgin-codes/Portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/Georgin-codes/Portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Georgin-codes/Portfolio.git"
+  },
+  "license": "ISC",
+  "author": "Ginu George",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "daemon": "^1.1.0",
+    "express": "^5.2.1",
+    "init": "^0.1.2"
+  }
+}
