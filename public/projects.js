@@ -5,6 +5,8 @@ const container = document.getElementById("container")
 
 
 function render(){
+
+    const response = fetch("/api/projects")
     data.forEach((project)=>{
     
     const {title, subtitle, description}= project

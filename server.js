@@ -1,12 +1,11 @@
 import express from "express"
+import { router } from './routes.js'
 
 const app = express()
 const PORT = 8000
 
-app.use('/',(req, res)=>{
-    console.log("hai")
-    res.send("Hello IM working")
-})
+app.use(express.static("public"))
+app.use('/api', router)
 
 
 app.listen(PORT, ()=>{
