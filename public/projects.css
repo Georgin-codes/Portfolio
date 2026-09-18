@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    padding:1em 1.35em;
+    height:100vh;
+    background-color: #252525;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    border:1px solid #70e000;
+    padding:1em 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.heading{
+    text-align: center;
+}
+
+.details p{
+    text-align: justify;
+}
+
+.btn{
+    background-color: #70e000;
+    border:none;
+    color:black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    padding:0.5em 1em;
+    font-size: 1rem;
+    border-radius: 3.5px;
+}
+
+#github-btn{
+    margin-left: 0.35em;
+}
+
+header{
+    text-align: center;
+}
+
