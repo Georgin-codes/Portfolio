@@ -156,6 +156,12 @@ a:hover{
     }
 }
 
+@media(min-width:550px){
+    .fa-bars{
+        font-size: 1.3rem;
+   }
+}
+
 @media(min-height:720px){
 
     header img{
@@ -166,7 +172,7 @@ a:hover{
         font-size: 1.2rem;
     }
 
-    a{
+    .links{
         font-size: 1.3rem;
     }
 
@@ -214,16 +220,8 @@ a:hover{
         padding:0 6em;
     }
 
-   .fa-bars{
-        font-size: 1.5rem;
-   }
-
-   a{
-        font-size: 1.5rem;
-   }
-
    .close-btn{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
    }
 
    header h1{
@@ -234,19 +232,6 @@ a:hover{
 
 @media(min-width:1500px){
 
-     header h1{
-        font-size: 4.5rem;
-   }
-
-   a{
-        font-size: 2.5rem;
-   }
-
-   header img{
-        width:350px;
-        height:350px;
-   }
-
    .side-menu{
         width:20%;
         display: flex;
@@ -255,15 +240,15 @@ a:hover{
    }
 
    .container h2{
-        font-size: 4rem;
+        font-size: 3rem;
    }
 
    .bio{
-        font-size: 3rem;
+        font-size: 2rem;
    }
 
    li{
-        font-size: 3rem;
+        font-size: 2rem;
    }
 
    .container{
@@ -271,21 +256,18 @@ a:hover{
    }
 
    .btn{
-        padding:1.2em 2em;
-        font-size: 2rem;
+        padding:1em 2em;
+        font-size: 1.5rem;
         border-radius: 10px;
    }
 
-   .fa-bars{
-        font-size: 2.5rem;
-   }
 
    #a-tags{
         padding:0;
    }
 
    .close-btn{
-        font-size: 2.5rem;
+        font-size: 1.3rem;
    }
     
 }
