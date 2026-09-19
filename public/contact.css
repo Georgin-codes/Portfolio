@@ -81,7 +81,7 @@ header h1{
     width:100%;
 }
 
-a{
+.links{
     color:white;
     font-size: 1.1rem;
     margin-bottom: 0;
@@ -93,7 +93,7 @@ a{
     text-align: center;
 }
 
-a:hover{
+.links:hover{
     color:#70e000;
     background-color: #1c1c1c;
 }
@@ -161,6 +161,18 @@ a:hover{
     header p{
         font-size: 1.2rem;
     }
+
+    .close-btn{
+        font-size: 1.3rem;
+    }
+
+    .links{
+        font-size: 1.3rem;
+    }
+
+    .fa-bars{
+        font-size: 1.3rem;
+    }
 }
 
 
@@ -171,25 +183,20 @@ a:hover{
     }
 
    input{
-        margin-bottom: 1.5em;
+        margin-bottom: 1.2em;
         font-size: 1.1rem;
    }
 
-   label{
-    font-size: 1.1rem;
+   label, textarea{
+    font-size: 1.2rem;
    }
 
    header p{
         margin-bottom: 0;
-        font-size: 1.5rem;
    }
 
    header{
         margin-bottom: 1em;
-   }
-
-   header h1{
-        font-size: 2.5rem;
    }
 
    .btn{
@@ -198,13 +205,6 @@ a:hover{
         font-weight: 700;
    }
 
-    .close-btn{
-        font-size: 1.2rem;
-    }
-
-    a{
-        font-size: 1.3rem;
-    }
 
 }
 
@@ -212,11 +212,7 @@ a:hover{
 
 
     header p{
-        font-size: 1.75rem;
-    }
-
-    label, input, textarea{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .btn{
@@ -227,10 +223,6 @@ a:hover{
         margin-bottom: 2em;
     }
 
-    header h1{
-        font-size: 2.75rem;
-    }
-
 }
 
 @media(min-width:1080px){
@@ -239,11 +231,11 @@ a:hover{
     }
 
     header h1{
-        font-size: 3rem;
-    }
+        font-size: 2.5rem;
+   }
 
     header p, label{
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .btn{
@@ -251,7 +243,7 @@ a:hover{
         font-size: 1.3rem;
         width:60%;
         border-radius: 5px;
-        padding:1em;
+        padding:0.75em 1em;
         margin-bottom: 3em;
     }
 
@@ -262,28 +254,16 @@ a:hover{
     textarea{
         font-size: 1rem;
     }
-
-    .fa-bars{
-        font-size: 1.5rem;
-   }
-
-   a{
-        font-size: 1.5rem;
-   }
-
-   .close-btn{
-        font-size: 1.5rem;
-   }
 }
 
 @media(min-width:1500px){
     header h1{
-        font-size: 4.75rem;
+        font-size: 3rem;
         margin: 0.75em 0 0;
     }
 
     header p{
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin-top: 1em;
         text-align: center;
     }
@@ -291,10 +271,6 @@ a:hover{
     .container{
         padding:0 7em;
         margin-top:5em;
-    }
-
-    input,label, textarea{
-        font-size: 2rem;
     }
 
     textarea{
@@ -307,21 +283,10 @@ a:hover{
 
     .btn{
         width:40%;
-        font-size: 2rem;
-        padding:1.1em;
-        
     }
-
-    a{
-        font-size: 2.5rem;
-   }
 
    .side-menu{
         width:20%;
-   }
-
-   .fa-bars{
-        font-size: 2.5rem;
    }
 
    #a-tags{
@@ -329,9 +294,5 @@ a:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
-   }
-
-   .close-btn{
-        font-size: 2.5rem;
    }
 }

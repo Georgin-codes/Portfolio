@@ -160,6 +160,10 @@ a:hover{
     .fa-bars{
         font-size: 1.3rem;
    }
+
+   .close-btn{
+        font-size: 1.3rem;
+    }
 }
 
 @media(min-height:720px){
@@ -167,9 +171,6 @@ a:hover{
     header img{
         width:220px;
         height:220px;
-    }
-    .close-btn{
-        font-size: 1.2rem;
     }
 
     .links{
@@ -220,10 +221,6 @@ a:hover{
         padding:0 6em;
     }
 
-   .close-btn{
-        font-size: 1.3rem;
-   }
-
    header h1{
         font-size: 2.5rem;
    }
@@ -264,10 +261,6 @@ a:hover{
 
    #a-tags{
         padding:0;
-   }
-
-   .close-btn{
-        font-size: 1.3rem;
    }
     
 }
