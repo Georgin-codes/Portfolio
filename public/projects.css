@@ -135,6 +135,13 @@ header{
     .link{
         font-size: 1.3rem;
     }
+
+}
+
+@media(min-width:720px){
+    .side-menu{
+        width:35%;
+    }
 }
 
 
