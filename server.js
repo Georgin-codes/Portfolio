@@ -1,11 +1,14 @@
 import express from "express"
-import { router } from './routes.js'
+import { renderRouter, contactRouter } from './routes.js'
 
 const app = express()
 const PORT = 8000
 
+app.use(express.json())
 app.use(express.static("public"))
-app.use('/api', router)
+app.use('/api/contact', contactRouter)
+app.use('/api', renderRouter)
+
 
 
 app.listen(PORT, ()=>{
