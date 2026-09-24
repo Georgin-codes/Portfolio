@@ -135,6 +135,20 @@ a:hover{
     color:#70e000;
 }
 
+.name{
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: #9CFF1E;
+    color:#111111;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: #5DBA00;
+}
+
 @media(min-height:420px){
 
     header img{
