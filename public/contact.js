@@ -60,7 +60,6 @@ Btn.addEventListener("click", async (e)=>{
         }
 
         const data = await res.json()
-        console.log(data)
         apiResponse.textContent = data.message
         responseBody.style.display = "block"
 

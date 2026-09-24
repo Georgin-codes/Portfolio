@@ -181,6 +181,9 @@ header h1{
     cursor: not-allowed;
 }
 
+.response-close-btn:hover{
+    color:#70e000;
+}
 
 
 @media(min-width:420px){
