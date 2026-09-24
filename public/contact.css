@@ -3,6 +3,7 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: #252525;
     color:white;
+    position: relative;
 }
 
 form{
@@ -137,6 +138,49 @@ header h1{
 .btn:active{
     background-color: #5DBA00;
 }
+
+.response{
+    border:1px solid #70e000;
+    background-color: #111111;
+    width: 80%;
+    height:10vh;
+    margin-bottom: 3em;
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    display:none;
+
+}
+
+.response-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.response-close-btn{
+    position: absolute;
+    right:0.5em;
+    top:0.5em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: grey;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:disabled{
+    background-color:   #4A8F00;
+    color:#B8C0B0;
+    cursor: not-allowed;
+}
+
 
 
 @media(min-width:420px){
