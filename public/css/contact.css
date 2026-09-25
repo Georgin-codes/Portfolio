@@ -131,10 +131,10 @@ header h1{
     color:#70e000;
 }
 
-.btn:hover{
+/* .btn:hover{
     background-color: #9CFF1E;
     color:#111111;
-}
+} */
 
 .btn:active{
     background-color: #5DBA00;
