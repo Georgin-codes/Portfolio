@@ -47,6 +47,7 @@ header{
     background-color: #252525;
     width:50%;
     height:100dvh;
+    box-sizing: border-box;
     position:fixed;
     top:0;
     left:0;
