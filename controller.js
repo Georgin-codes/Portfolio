@@ -9,6 +9,7 @@ export async function serveProjects(req, res){
         const client = connectDb()
         const {data, error} = await client.from("projects")
                                 .select()
+                                .order("display_order", {ascending:true})
         if(error){
             console.log(error)
             return res.status(500).json({message:"Error fetching projects"})

@@ -14,7 +14,7 @@ async function render(){
 
         data.forEach((project)=>{
         
-            const {title, subtitle, description, demo_link, github_link, demo_id, github_id}= project
+            const {title, subtitle, description, demo_link, github_link, demo_id, github_id, livesite_id, livesite_link}= project
 
             container.innerHTML += `<div class="projects">
 
@@ -28,6 +28,7 @@ async function render(){
                                             <div class="buttons">
                                                 <a class="btn" id="${demo_id}" href="${demo_link}" target="_blank">Demo</a>
                                                 <a class="btn" id="${github_id}" href="${github_link}" target="_blank">GitHub</a>
+                                                <a class="btn" id="${livesite_id}" href="${livesite_link}" target="_blank">Live Site</a>
                                             </div>
                                         </div>  
 
@@ -36,6 +37,11 @@ async function render(){
             if(!project.demo_link){
                 document.getElementById(demo_id).removeAttribute("href")
                 document.getElementById(demo_id).classList.add("disabled")
+            }
+
+            if(!project.livesite_id){
+                document.getElementById(livesite_id).removeAttribute("href")
+                document.getElementById(livesite_id).classList.add("disabled")
             }
 
         })
