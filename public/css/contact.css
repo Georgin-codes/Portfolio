@@ -37,6 +37,7 @@ textarea{
 .btn{
     padding:0.75em;
     background-color:#70e000;
+    color: black;
     border:none;
     border-radius: 3px;
     font-family: "Roboto", sans-serif;
