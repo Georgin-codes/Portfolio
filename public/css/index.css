@@ -1,6 +1,9 @@
-body{
+html,body{
     font-family: "Roboto", sans-serif;
     margin:0;
+    padding:0;
+    width:100%;
+    min-height: 100%;
     color:white;
     text-align: center;
 }
@@ -80,7 +83,7 @@ li{
 .side-menu{
     background-color: #252525;
     width: 50%;
-    height:100dvh;
+    /* height:100dvh; */
     box-sizing: border-box;
     position:fixed;
     top:0;
