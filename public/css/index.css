@@ -3,6 +3,7 @@ body{
     margin:0 0 4em;
     color:white;
     text-align: center;
+    height: 100vh;
 }
 
 header{
@@ -79,7 +80,7 @@ li{
 
 .side-menu{
     background-color: #252525;
-    width:50%;
+    width: 50%;
     height:100vh;
     position:fixed;
     top:0;
@@ -89,7 +90,7 @@ li{
     padding-top:5em;
 }
 
-a{
+.links{
     color:white;
     font-size: 1.1rem;
     margin-bottom: 0;
@@ -98,9 +99,10 @@ a{
     text-decoration: none;
     cursor:pointer;
     transition: background-color 0.25s ease;
+    text-align: center;
 }
 
-a:hover{
+.links:hover{
     color:#70e000;
     background-color: #1c1c1c;
 }
@@ -150,6 +152,11 @@ a:hover{
     background-color: #5DBA00;
 }
 
+.menu-container{
+    display: flex;
+    flex-direction: column;
+}
+
 @media(min-height:420px){
 
     header img{
@@ -190,7 +197,7 @@ a:hover{
     }
 }
 
-@media(min-height:720px){
+@media(min-width:720px){
 
     header img{
         width:220px;
@@ -258,9 +265,6 @@ a:hover{
    header h1{
         font-size: 2.5rem;
    }
-   .side-menu{
-        width:35%;
-    }
 
     .btn{
         font-size: 1.3rem;
