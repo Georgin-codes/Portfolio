@@ -57,12 +57,14 @@ header img{
     margin-top:2em;
     border-radius: 3px;
     width:85%;
+    text-decoration: none;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 3em;
 }
 
 .skills{
