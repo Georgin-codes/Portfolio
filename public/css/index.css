@@ -48,13 +48,14 @@ header img{
 .btn{
     background-color: #70e000;
     color:black;
-    padding:1em;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 1em;;
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding:0.75em;
     border:none;
     margin-top:2em;
     border-radius: 3px;
+    width:85%;
 }
 
 .container{
@@ -182,6 +183,11 @@ a:hover{
     .links{
         font-size: 1.3rem;
     }
+
+    .btn{
+        font-size: 1rem;
+        width:80%;
+    }
 }
 
 @media(min-height:720px){
@@ -207,6 +213,8 @@ a:hover{
     }
 
     .btn{
+        width:70%;
+        font-weight: 700;
         border-radius: 5px;
     }
 
@@ -214,6 +222,14 @@ a:hover{
         width:35%;
     }
 
+}
+
+@media(min-width:850px){
+    .btn{
+        padding:1.2em;
+        border-radius: 6px;
+
+    }
 }
 
 @media(min-width:1080px){
@@ -246,6 +262,11 @@ a:hover{
         width:35%;
     }
 
+    .btn{
+        font-size: 1.3rem;
+        width:60%;
+        padding:0.75em;
+    }
 
 }
 
@@ -269,6 +290,7 @@ a:hover{
    }
 
    .btn{
+        width:40%;
         padding:1em 2em;
         font-size: 1.5rem;
         border-radius: 10px;
