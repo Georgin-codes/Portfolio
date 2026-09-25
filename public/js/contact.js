@@ -16,7 +16,7 @@ closeBtn.addEventListener("click", ()=>{
     sideMenu.classList.remove("slide")
 })
 
-Btn.addEventListener("click", async (e)=>{
+Btn.addEventListener("submit", async (e)=>{
 
     e.preventDefault()
     body.style.backgroundColor = "#3A3A3A"
