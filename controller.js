@@ -13,7 +13,7 @@ export async function serveProjects(req, res){
             console.log(error)
             return res.status(500).json({message:"Error fetching projects"})
         }
-        // console.log(data)
+
         return res.json(data)
     }
     catch(error){

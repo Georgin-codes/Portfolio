@@ -109,6 +109,12 @@ header{
     flex-direction: column;
 }
 
+.disabled{
+    background-color:   #4A8F00;
+    /* color:#B8C0B0; */
+    cursor: not-allowed;
+}
+
 @media(min-width:420px){
     .buttons{
         margin-top: 1.5em;
