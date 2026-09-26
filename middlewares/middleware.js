@@ -8,6 +8,7 @@ export const limiter = rateLimit({
 	ipv6Subnet: 64, 
     handler: (req, res)=>{
         console.log("Rate limit reached")
+        console.log("IP:", req.ip)
         res.status(429).json({message: "Too many form submission, try again later"})
     }
 })
