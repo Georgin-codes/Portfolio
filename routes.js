@@ -7,9 +7,5 @@ export const contactRouter = express.Router()
 
 
 renderRouter.get("/projects", serveProjects)
-contactRouter.post("/submit", (req, res, next) => {
-    console.log("IP:", req.ip)
-    console.log("Forwarded:", req.headers["x-forwarded-for"])
-    next()
-}, limiter, sendMail)
+contactRouter.post("/submit", limiter, sendMail)
 
