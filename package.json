@@ -25,7 +25,8 @@
     "express": "^5.2.1",
     "express-rate-limit": "^8.7.0",
     "init": "^0.1.2",
-    "resend": "^6.28.1"
+    "resend": "^6.28.1",
+    "validator": "^13.15.35"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"

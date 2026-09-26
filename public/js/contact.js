@@ -29,8 +29,8 @@ Btn.addEventListener("submit", async (e)=>{
 
     const name  = nameInput.value.trim().toLowerCase()
     const email  = emailInput.value.trim().toLowerCase()
-    let subject  = subjectInput.value.trim().toLowerCase()
-    const message  = messageInput.value.trim().toLowerCase()
+    let subject  = subjectInput.value.trim()
+    const message  = messageInput.value.trim()
 
     if(!name || !email || !message){
         return console.log("All fields are required")

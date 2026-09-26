@@ -1,5 +1,6 @@
 import { connectDb } from "./db/db.js"
 import { Resend } from 'resend'
+import validator from 'validator'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
@@ -28,11 +29,20 @@ export async function serveProjects(req, res){
 export async function sendMail(req, res){
 
     console.log(req.body)
-    const {name, email, subject, message} = req.body
+    let {name, email, subject, message} = req.body
 
-    if(!name || !email || !subject || !message){
+    name = name.trim().toLowerCase()
+    email = email.trim().toLowerCase()
+    subject = subject.trim()
+    message = message.trim()
+
+    if(!name || !email || !message){
         return res.status(400).json({message:"Name, email, message are required"})
     }
+
+    if(!validator.isEmail(email)){
+            return res.status(400).json({message:"Invalid email"})
+        }
 
     try{
             const { data, error } = await resend.emails.send({
@@ -42,8 +52,8 @@ export async function sendMail(req, res){
             html:`  <p>${message}</p>
                     <br>
                     <h3><strong>From,</strong></h3>
-                    <p>name</p>
-                    <p>email</p>`
+                    <p>${name}</p>
+                    <p>${email}</p>`
             });
 
             if(error){
