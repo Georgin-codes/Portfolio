@@ -28,10 +28,9 @@ export async function serveProjects(req, res){
 
 export async function sendMail(req, res){
 
-    console.log(req.body)
     let {name, email, subject, message} = req.body
 
-    name = name.trim().toLowerCase()
+    name = name.trim()
     email = email.trim().toLowerCase()
     subject = subject.trim()
     message = message.trim()
