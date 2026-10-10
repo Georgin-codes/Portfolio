@@ -39,7 +39,7 @@ async function render(){
                 document.getElementById(demo_id).classList.add("disabled")
             }
 
-            if(!project.livesite_id){
+            if(!project.livesite_link){
                 document.getElementById(livesite_id).removeAttribute("href")
                 document.getElementById(livesite_id).classList.add("disabled")
             }
